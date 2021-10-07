@@ -72,4 +72,9 @@ const AddMovieForm = (props) => {
     </div>);
 }
 
-export default connect(null, {addMovie})(AddMovieForm);
+
+const mapActionsToProps = {
+    addMovie
+}
+
+export default connect(null, {mapActionsToProps})(AddMovieForm);
