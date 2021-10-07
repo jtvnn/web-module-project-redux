@@ -31,5 +31,11 @@ const mapStateToProps = (state) => {
     })
 }
 
+const mapActionsToProps = (state) => {
+    return({
+        toggleFavorites
+    })
+}
 
-export default connect(mapStateToProps, { toggleFavorites })(MovieHeader);
+
+export default connect(mapStateToProps,  mapActionsToProps )(MovieHeader);
